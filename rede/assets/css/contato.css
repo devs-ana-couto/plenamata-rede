@@ -1,0 +1,28 @@
+.contato-hero {
+  height: 580px;
+  background: url("../../assets/images/contato/banner-mobile.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .contato-hero .contato-hero-title {
+    margin: 0 auto; }
+    .contato-hero .contato-hero-title h1 {
+      margin-top: 162px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase; }
+  .contato-hero .contato-hero-content h2 {
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 400;
+    width: 320px;
+    margin: 198px auto 0 auto; }
+  .contato-hero .arrow {
+    margin-top: 0; }
+
+.contato-intro p {
+  font-size: 26px;
+  line-height: 34px; }

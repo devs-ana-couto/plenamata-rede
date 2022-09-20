@@ -1,0 +1,23 @@
+.pessoas-e-carreiras-hero {
+  height: 580px;
+  background: url("../../assets/images/pessoas-e-carreiras/banner.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column; }
+  .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-title {
+    margin: 0 auto; }
+    .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-title h1 {
+      margin-top: 162px;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase; }
+  .pessoas-e-carreiras-hero .pessoas-e-carreiras-hero-content h2 {
+    font-size: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 198px; }
+  .pessoas-e-carreiras-hero .botao a {
+    background: transparent; }

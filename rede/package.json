@@ -1,0 +1,19 @@
+{
+  "name": "tivit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass assets/scss/style.scss -o assets/css",
+    "watch": "npm run css && node-sass assets/scss/style.scss -wo assets/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.10.2",
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.1"
+  }
+}

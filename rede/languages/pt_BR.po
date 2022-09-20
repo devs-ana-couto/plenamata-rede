@@ -1,0 +1,135 @@
+# Copyright (C) 2020 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Rede Amazonia Viva\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/_s\n"
+"POT-Creation-Date: 2022-09-19 18:02-0300\n"
+"PO-Revision-Date: 2022-09-19 18:03-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.1.1\n"
+"X-Domain: _s\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: node_modules\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#: footer.php:7 footer.php:23
+msgid "Newsletter PlenaMata"
+msgstr ""
+
+#: footer.php:8
+msgid "ASSINE E FAÇA PARTE DO MOVIMENTO"
+msgstr ""
+
+#: footer.php:11
+msgid "árvores derrubadas em 2022"
+msgstr ""
+
+#: footer.php:26
+msgid "de árvores derrubadas em 2022"
+msgstr ""
+
+#: footer.php:82
+msgid "Notícias"
+msgstr ""
+
+#: footer.php:83
+msgid "Glossário"
+msgstr ""
+
+#: footer.php:84 header.php:275
+msgid "Sobre"
+msgstr ""
+
+#: footer.php:85
+msgid "Campanhas"
+msgstr ""
+
+#: footer.php:86
+msgid "Rede"
+msgstr ""
+
+#: footer.php:87
+msgid "Contato"
+msgstr ""
+
+#: footer.php:90
+msgid "Realizadores"
+msgstr ""
+
+#: footer.php:136
+msgid "Copyright © 2022 PlenaMata"
+msgstr ""
+
+#: footer.php:137
+msgid "Declaração de privacidade"
+msgstr ""
+
+#: header.php:274
+msgid "Início"
+msgstr ""
+
+#: header.php:276
+msgid "Membros"
+msgstr ""
+
+#: header.php:277
+msgid "Calendário"
+msgstr ""
+
+#: header.php:278
+msgid "Master Class"
+msgstr ""
+
+#: header.php:279
+msgid "ToolKit"
+msgstr ""
+
+#: header.php:280
+msgid "Compartilhe"
+msgstr ""
+
+#: inc/calendario.php:225
+msgid "sem atividade"
+msgstr ""
+
+#: inc/calendario.php:243 inc/page.builder/componentes/ac/master.class.php:58
+#: inc/page.builder/componentes/ac/master.class.php:72
+msgid "EM BREVE"
+msgstr ""
+
+#: inc/carrossel_home.php:259
+msgid "Saiba como manter a floresta em pé"
+msgstr ""
+
+#: inc/page.builder/componentes/ac/master.class.php:35
+msgid "Assista outros episódios"
+msgstr ""
+
+#: inc/page.builder/componentes/ac/master.class.php:77
+msgid "Em breve"
+msgstr ""
+
+#: inc/page.builder/componentes/ac/members.php:45
+msgid "Conheça mais"
+msgstr ""
+
+#: inc/page.builder/componentes/ac/share.php:19
+msgid "Compartilhe nas redes"
+msgstr ""
+
+#: inc/page.builder/componentes/ac/share.php:30
+msgid "Faça parte dos nossos canais"
+msgstr ""
+
+#: inc/page.builder/componentes/ac/tools.kit.php:20
+msgid "Todos"
+msgstr ""
