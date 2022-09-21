@@ -18,6 +18,86 @@ load_theme_textdomain( 'pl-rede', TEMPLATEPATH.'/languages' );
 
 add_theme_support('post-thumbnails');
 
+
+function pl_customiza( $wp_customize ) {
+    $wp_customize->add_section( 'canais', array(
+        'title'    => 'Canais',
+        'priority' => 30,
+    ) );
+    $wp_customize->add_setting( 'telegram', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'telegram', array(
+            'label'    => 'Telegram URL',
+            'section'  => 'canais',
+            'settings' => 'telegram',
+            'type'     => 'text',
+        )
+    ) );
+    $wp_customize->add_setting( 'whatsapp', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'whatsapp', array(
+            'label'    => 'Whatsapp URL',
+            'section'  => 'canais',
+            'settings' => 'whatsapp',
+            'type'     => 'text',
+        )
+    ) );
+    $wp_customize->add_section( 'rede_sociais', array(
+        'title'    => 'Rede Sociais',
+        'priority' => 30,
+    ) );
+    $wp_customize->add_setting( 'facebook', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'facebook', array(
+            'label'    => 'Facebook URL',
+            'section'  => 'rede_sociais',
+            'settings' => 'facebook',
+            'type'     => 'text',
+        )
+    ) );
+    $wp_customize->add_setting( 'linkedin', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'linkedin', array(
+            'label'    => 'LinkedIn URL',
+            'section'  => 'rede_sociais',
+            'settings' => 'linkedin',
+            'type'     => 'text',
+        )
+    ) );
+    $wp_customize->add_setting( 'twitter', array(
+        'default'   => '',
+        'transport' => 'postMessage',
+    ) );
+    $wp_customize->add_control( new WP_Customize_Control(
+        $wp_customize, 'twitter', array(
+            'label'    => 'Twitter URL',
+            'section'  => 'rede_sociais',
+            'settings' => 'twitter',
+            'type'     => 'text',
+        )
+    ) );
+}
+add_action( 'customize_register', 'pl_customiza' );
+
+
+add_action('admin_head', 'remove_content_editor');
+function remove_content_editor() {
+    remove_post_type_support('page', 'editor');
+}
+
+
 function load_scripts() {
     wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/frameworks/css/bootstrap.min.css');
     wp_enqueue_style('owl', get_template_directory_uri() . '/assets/css/owl.carousel.css');

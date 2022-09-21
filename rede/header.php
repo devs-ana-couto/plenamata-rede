@@ -35,7 +35,7 @@
 	    }
 	    </script> -->
 
-    	<title>Todos os anos a quantidade de árvores derrubadas aumenta - PlenaMata</title>
+    	<title>Rede Amazônia Viva - PlenaMata</title>
 
 		<!-- <script type="text/javascript" data-cfasync="false">Piki={ baseurl : "https://plenamata.eco/wp-content/themes/plenamata/piki", blogurl : "https://plenamata.eco", themeurl : "https://plenamata.eco/wp-content/themes/plenamata", pluginsurl : "https://plenamata.eco/wp-content/plugins", ajaxurl : "https://plenamata.eco/wp-admin/admin-ajax.php", is_admin : false };</script> -->
 		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />

@@ -75,7 +75,7 @@ if (headerLp !== "" || headerLp !== null) {
 
 function activeShare(id) {
     let idValue = `${id}`;
-    console.log(idValue);
+    // console.log(idValue);
     let mediaForm = document.querySelector(idValue);
     let linkCta = mediaForm.querySelector(".compartilhe-cta");
     let midiasAtivas = mediaForm.querySelector(".midas-ativas");
@@ -198,44 +198,29 @@ function startCalendary(id, mesNumber, validaOnclick) {
         });
     }
 }
-//Constrói a URL depois que o DOM estiver pronto
-document.addEventListener("DOMContentLoaded", function() {
-    //altera a URL do botão
-    document.getElementById("facebook-share-btt").href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href);
-}, false);
-//Constrói a URL depois que o DOM estiver pronto
-document.addEventListener("DOMContentLoaded", function() {
-    var url = encodeURIComponent(window.location.href);
-    var titulo = encodeURIComponent(document.title);
-    //var via = encodeURIComponent("usuario-twitter"); //nome de usuário do twitter do seu site
-    //altera a URL do botão
-    document.getElementById("twitter-share-btt").href = "https://twitter.com/intent/tweet?url="+url+"&text="+titulo;
+// document.addEventListener("DOMContentLoaded", function() {
+//     document.getElementById("facebook-share-btt").href = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href);
+// }, false);
+// document.addEventListener("DOMContentLoaded", function() {
+//     var url = encodeURIComponent(window.location.href);
+//     var titulo = encodeURIComponent(document.title);
+//     document.getElementById("twitter-share-btt").href = "https://twitter.com/intent/tweet?url="+url+"&text="+titulo;
+// }, false);
+// linkedin = function (event, s, a){
+//     event.preventDefault();
+//     window.open('https://www.linkedin.com/cws/share?url=' +s+ '?name=' +a, 'newwindow', 'width=680, height=450');
+// };
 
-    //se for usar o atributo via, utilize a seguinte url
-    //document.getElementById("twitter-share-btt").href = "https://twitter.com/intent/tweet?url="+url+"&text="+titulo+"&via="+via;
-}, false);
-linkedin = function (event, s, a){
-    event.preventDefault();
-    window.open('https://www.linkedin.com/cws/share?url=' +s+ '?name=' +a, 'newwindow', 'width=680, height=450');
-};
-
-//Constrói a URL depois que o DOM estiver pronto
-document.addEventListener("DOMContentLoaded", function() {
-    var url = encodeURIComponent(window.location.href); //url
-    var titulo = encodeURIComponent(document.title); //título
-    var linkedinLink = "https://www.linkedin.com/shareArticle?mini=true&url="+url+"&title="+titulo;
-
-    //tenta obter o conteúdo da meta tag description
-    var summary = document.querySelector("meta[name='description']");
-    summary = (!!summary)? summary.getAttribute("content") : null;
-
-    //se a meta tag description estiver ausente...
-    if(!summary){
-        //...tenta obter o conteúdo da meta tag og:description
-        summary = document.querySelector("meta[property='og:description']");
-        summary = (!!summary)? summary.getAttribute("content") : null;
-    }
-    //altera o link do botão
-    linkedinLink = (!!summary)? linkedinLink + "&summary=" + encodeURIComponent(summary) : linkedinLink;
-    document.getElementById("linkedin-share-btt").href = linkedinLink;
-}, false);
+// document.addEventListener("DOMContentLoaded", function() {
+//     var url = encodeURIComponent(window.location.href); //url
+//     var titulo = encodeURIComponent(document.title); //título
+//     var linkedinLink = "https://www.linkedin.com/shareArticle?mini=true&url="+url+"&title="+titulo;
+//     var summary = document.querySelector("meta[name='description']");
+//     summary = (!!summary)? summary.getAttribute("content") : null;
+//     if(!summary){
+//         summary = document.querySelector("meta[property='og:description']");
+//         summary = (!!summary)? summary.getAttribute("content") : null;
+//     }
+//     linkedinLink = (!!summary)? linkedinLink + "&summary=" + encodeURIComponent(summary) : linkedinLink;
+//     document.getElementById("linkedin-share-btt").href = linkedinLink;
+// }, false);
