@@ -1,7 +1,17 @@
 html {
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
-
+.main-menu a {
+  font-family: "Roboto", sans-serif !important;
+}
+body .site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transition: background .4s ease-in-out;
+}
 .redeamazoniaviva {
   .social-medias {
     cursor: pointer;

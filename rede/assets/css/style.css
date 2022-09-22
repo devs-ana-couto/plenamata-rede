@@ -14,7 +14,8 @@
   position: relative;
   -ms-touch-action: pan-Y;
   touch-action: manipulation;
-  -moz-backface-visibility: hidden; /* fix firefox animation glitch */
+  -moz-backface-visibility: hidden;
+  /* fix firefox animation glitch */
 }
 .owl-carousel .owl-stage:after {
   content: ".";
@@ -250,7 +251,20 @@
 }
 
 html {
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+}
+
+.main-menu a {
+  font-family: "Roboto", sans-serif !important;
+}
+
+body .site-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  transition: background 0.4s ease-in-out;
 }
 
 .redeamazoniaviva .social-medias {
@@ -604,7 +618,7 @@ html {
   margin: 0px;
 }
 .redeamazoniaviva .newsletter__lp .box-form .box-newsletter .newsletter input[type=checkbox]:checked {
-  background: rgb(123, 185, 179);
+  background: #7bb9b3;
   background-image: url("../images/graphics/checked.svg");
 }
 .redeamazoniaviva .newsletter__lp .box-form .box-newsletter .newsletter label {
@@ -644,8 +658,8 @@ html {
   z-index: 200;
 }
 .redeamazoniaviva .video-intro .box-player .mask-player {
-  background: rgb(255, 0, 0);
-  background: radial-gradient(circle, rgba(255, 0, 0, 0) 0%, rgb(26, 44, 49) 80%);
+  background: red;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0) 0%, #1a2c31 80%);
 }
 @media screen and (max-width: 991px) {
   .redeamazoniaviva .video-intro .box-player {

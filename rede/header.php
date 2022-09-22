@@ -251,7 +251,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <li id="menu-item-21326" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item  current_page_item menu-item-21326 rede"><a title="Rede" href="https://plenamata.eco/redeamazoniaviva/">Rede</a></li>
 <li id="menu-item-21327" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21327 contato"><a title="Contato" href="https://plenamata.eco/contato/">Contato</a></li>
 </ul>
-			  			<a href="https://plenamata.eco/monitor/" class="button acess-dashboard" title="Acesse nosso monitor">Acesse nosso monitor</a><div class="smalldrop languages" data-type="language-switcher" style="display:none;">
+			  			<a href="https://plenamata.eco/monitor/" class="button acess-dashboard" title="Acesse nosso monitor">Acesse nosso monitor</a><div class="smalldrop languages" data-type="language-switcher">
 			<button class="clean">PT</button>
 			<nav><a href="https://plenamata.eco/sobre/" title="PT" class="active">PT</a><a href="https://plenamata.eco/en/about/" title="EN" class="">EN</a><a href="https://plenamata.eco/es/sobre/" title="ES" class="">ES</a></nav>
 		</div>
