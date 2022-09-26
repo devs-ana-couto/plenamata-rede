@@ -8,9 +8,9 @@ function pb_ac_master_class($obj_id, $obj = null, $block, $echo = true)
     $desc_container = get_sub_field('gd-master-class-desc-container');
 
     $aulas_row = get_sub_field('gd-master-class-desc-repiter');
-    if(!empty($aulas_row)){
-    sort($aulas_row, SORT_DESC | SORT_NATURAL);
-    }
+    // if(!empty($aulas_row)){
+    // sort($aulas_row, SORT_DESC | SORT_NATURAL);
+    // }
     $template = '
     <section class="container-fluid master-class" id="master-class">
             <div class="container">
