@@ -62,7 +62,7 @@ function setController(id, boxLink) {
                 headerBackground = document.querySelector('.header__lp');
                 headerBackground.style.backgroundImage = `url('${linkImage}')`;
             }
-            console.log('linkImage', linkId, largura, linkImage);
+            // console.log('linkImage', linkId, largura, linkImage);
         } else {
             link.classList.remove("active");
         }
@@ -96,7 +96,7 @@ var ctaCompatilhe = document.querySelector('#compartilhe-cta');
 
 ctaCompatilhe.addEventListener("click", (event) => {
     event.preventDefault();
-    console.log('teste')
+    // console.log('teste')
 });
 
 function setaAncora(id) {
@@ -126,6 +126,21 @@ $('#carousel-master-class').owlCarousel({
 
         1000: {
             items: 3
+        }
+    }
+});
+
+$('.owl-carousel-calendario').owlCarousel({
+    loop: false,
+    margin: 47,
+    //autoWidth: true,
+    nav: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        1000: {
+            items: 2
         }
     }
 });
