@@ -172,7 +172,7 @@ if (!function_exists('bloco_carrosselhome')) {
             'posts_per_page'  => -1,
             'page'            => 1,
             'post_status'     => 'publish',
-            'orderby'         => 'menu',
+            'orderby'         => 'menu_order',
             'order'           => 'ASC',
         );
         $the_query = new WP_Query( $args );
