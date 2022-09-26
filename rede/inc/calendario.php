@@ -131,7 +131,7 @@ if (!function_exists('bloco_calendario')) {
             'posts_per_page'  => -1,
             'page'            => 1,
             'post_status'     => 'publish',
-            'orderby'         => 'menu',
+            'orderby'         => 'menu_order',
             'order'           => 'ASC',
         );
         $the_query = new WP_Query( $args );
@@ -226,8 +226,9 @@ if (!function_exists('bloco_calendario')) {
             } else {
                 $saida .= '<div class="row">';
                 $saida .= '<div class="col-12 box-calendar">';
-                $saida .= '<div class="col-12 box-content-sliders mt-5" id="content-sliders">';
-                $saida .= '<div class="row row-cols-1 row-cols-lg-2 justify-content-center">';
+                $saida .= '<div class="col-12 box-content-sliders mt-5" id="">';
+                $saida .= '<div class="row">';
+                $saida .= '<div class="owl-carousel owl-theme owl-carousel-calendario" id="content-sliders">';
                 $essemes = $dados[$me];
                 foreach ($essemes as $dia => $eventos) {
                     for ($ev=0; $ev<count($eventos); $ev++) {
@@ -260,6 +261,7 @@ if (!function_exists('bloco_calendario')) {
                         $saida .= '</div>'; //.col
                     }
                 }
+                $saida .= '</div>'; //.owl
                 $saida .= '</div>'; //.row
                 $saida .= '</div>'; //#content-sliders
                 $saida .= '</div>'; //.box-calendar
