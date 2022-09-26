@@ -18,6 +18,12 @@ load_theme_textdomain( 'pl-rede', TEMPLATEPATH.'/languages' );
 
 add_theme_support('post-thumbnails');
 
+register_nav_menus(
+    array(
+        'menu-lateral' => 'Menu Lateral',
+    )
+);
+
 
 function pl_customiza( $wp_customize ) {
     $wp_customize->add_section( 'canais', array(

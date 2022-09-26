@@ -234,7 +234,8 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
 </div>
 
-		  		</div><ul id="menu-menu-principal-pt" class="main-menu desktop"><li id="menu-item-20477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20477 inicio"><a title="Inicio" href="https://plenamata.eco/">Inicio</a></li>
+		  		</div>
+				<ul id="menu-menu-principal-pt" class="main-menu desktop"><li id="menu-item-20477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-20477 inicio"><a title="Inicio" href="https://plenamata.eco/">Inicio</a></li>
 <li id="menu-item-2038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2038 monitor"><a title="Monitor" href="https://plenamata.eco/monitor/">Monitor</a></li>
 <li id="menu-item-2039" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2039 noticias"><a title="Notícias" href="https://plenamata.eco/artigos/">Notícias</a></li>
 <li id="menu-item-20476" class="menu-item menu-item-type-post_type_archive menu-item-object-campanha menu-item-20476 campanhas"><a title="Campanhas" href="https://plenamata.eco/campanhas/">Campanhas</a></li>
@@ -271,12 +272,14 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 	    <main class="redeamazoniaviva" style="z-index: 0;">
 		<nav class="d-none d-lg-block position-fixed nav-right">
 			<div id="menu-list" class="list-group">
-				<a class="list-group-item list-group-item-action rounded-0" href="#start"><?php _e('Início', 'pl-rede');?></a>
-				<a class="list-group-item list-group-item-action rounded-0" href="#about"><?php _e('Sobre','pl-rede'); ?></a>
-				<a class="list-group-item list-group-item-action rounded-0" href="#members"><?php _e('Membros','pl-rede'); ?></a>
-				<a class="list-group-item list-group-item-action rounded-0" href="#calendar"><?php _e('Calendário','pl-rede'); ?></a>
-				<a class="list-group-item list-group-item-action rounded-0" href="#master-class"><?php _e('Master Class','pl-rede'); ?></a>
-				<a class="list-group-item list-group-item-action rounded-0" href="#tools"><?php _e('ToolKit','pl-rede'); ?></a>
-				<a class="list-group-item list-group-item-action rounded-0" href="#shared"><?php _e('Compartilhe','pl-rede');?></a>
+				<?php
+					$locations = get_nav_menu_locations();
+					$menu = wp_get_nav_menu_object($locations['menu-lateral']);
+					$menu_items = wp_get_nav_menu_items($menu->term_id);
+					$menus = array();
+					for ($mm = 0; $mm < count($menu_items); $mm++) {
+						echo '<a class="list-group-item list-group-item-action rounded-0" href="'.$menu_items[$mm]->url.'">'.$menu_items[$mm]->title.'</a></li>';
+					}
+				?>
 			</div>
 		</nav>
