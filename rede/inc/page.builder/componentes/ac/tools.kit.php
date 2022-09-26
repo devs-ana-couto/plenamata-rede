@@ -24,7 +24,7 @@ function pb_ac_toolskit($obj_id, $obj = null, $block, $echo = true)
                 </div>
 
                 <div class="col-12 box-cards mt-5">
-                    <div class="row row-cols-1 row-cols-lg-4 g-4">
+                    <div class="row row-cols-1 row-cols-lg-3 g-4">
                         {content}
                     </div>
                 </div>
@@ -46,7 +46,7 @@ function pb_ac_toolskit($obj_id, $obj = null, $block, $echo = true)
                 <p class="card-text mt-4">{descript}</p>
             </div>
             <div class="card-footer p-0 mt-4">
-                <a href="{link_cta}" class="btn btn-secondary">{text_cta}</a>
+                <a href="{link_cta}" class="btn btn-secondary" target="_blank">{text_cta}</a>
             </div>
         </div>
     </div>
