@@ -1791,3 +1791,22 @@ body.plnmt-wrapper > footer {
     }
   }
 }
+#menu-list {
+  a.list-group-item {
+    padding-left: 0;
+    padding-right: 0;
+    width: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+  }
+
+  &:hover {
+    a.list-group-item {
+      padding-left: 15px;
+      padding-right: 15px;
+      width: auto;
+      overflow: visible;
+      transition: all 0.5s;
+    }
+  }
+}

@@ -1778,4 +1778,19 @@ body.plnmt-wrapper > footer {
   color: #FFFFFF;
 }
 
+#menu-list a.list-group-item {
+  padding-left: 0;
+  padding-right: 0;
+  width: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#menu-list:hover a.list-group-item {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: auto;
+  overflow: visible;
+  transition: all 0.5s;
+}
+
 /*# sourceMappingURL=style.css.map */
