@@ -135,6 +135,7 @@ $('.owl-carousel-calendario').owlCarousel({
     margin: 47,
     //autoWidth: true,
     nav: true,
+    navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
     responsive: {
         0: {
             items: 1

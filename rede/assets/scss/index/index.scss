@@ -1484,11 +1484,35 @@ body .site-header {
   }
 }
 
+.owl-anterior {
+  position: absolute;
+  left: -42px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  cursor: pointer;
+  img {
+    width: 20px;
+  }
+}
+
+.owl-posterior {
+  position: absolute;
+  right: -42px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  cursor: pointer;
+  img {
+    width: 20px;
+  }
+}
+
 #content-sliders {
   .item-slider {
     .card {
       border: none;
-      transition: all 1s;
+      transition: all 1s ease;
 
       .letf-date {
         background: #EB6619;
@@ -1558,7 +1582,8 @@ body .site-header {
             visibility: hidden;
             opacity: 0;
             overflow: hidden;
-            transition: visibility, opacity 0.5s;
+            // transition: visibility, opacity 0.5s;
+            transition: 0.5s ease;
           }
 
           margin-bottom: 0px;
@@ -1578,7 +1603,8 @@ body .site-header {
             border: 1px solid #FFFFFF;
             background: #FFF;
             color: #000;
-            transition: background-color 0.5s;
+            // transition: background-color 0.5s;
+            transition: 0.5s ease;
           }
         }
 
@@ -1599,7 +1625,7 @@ body .site-header {
               opacity: 1;
               overflow: hidden;
               margin-bottom: 20px;
-              transition: height, visibility, opacity 1s;
+              // transition: height, visibility, opacity 1s;
             }
 
             a {
@@ -1608,7 +1634,7 @@ body .site-header {
               opacity: 1;
               overflow: hidden;
               margin-bottom: 40px;
-              transition: height, opacity 1s;
+              // transition: height, opacity 1s;
             }
           }
         }

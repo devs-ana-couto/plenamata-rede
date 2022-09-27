@@ -227,7 +227,9 @@ if (!function_exists('bloco_calendario')) {
                 $saida .= '<div class="row">';
                 $saida .= '<div class="col-12 box-calendar">';
                 $saida .= '<div class="col-12 box-content-sliders mt-5" id="">';
-                $saida .= '<div class="row">';
+                $saida .= '<div class="row position-relative">';
+                $saida .= '<a class="owl-anterior" onclick="jQuery(\'.owl-carousel-calendario\').trigger(\'prev.owl.carousel\')"><img src="' . get_template_directory_uri() .'/assets/images/graphics/laranja_esq.svg" /></a>';
+                $saida .= '<a class="owl-posterior" onclick="jQuery(\'.owl-carousel-calendario\').trigger(\'next.owl.carousel\')"><img src="' . get_template_directory_uri() .'/assets/images/graphics/laranja_dir.svg" /></a>';
                 $saida .= '<div class="owl-carousel owl-theme owl-carousel-calendario" id="content-sliders">';
                 $essemes = $dados[$me];
                 foreach ($essemes as $dia => $eventos) {
@@ -238,7 +240,7 @@ if (!function_exists('bloco_calendario')) {
                         $saida .= '<div class="row g-0 justify-content-center">';
                         $saida .= '<div class="col-12 col-lg-2 letf-date">';
                         $saida .= '<div class="card-body h-100 rounded-0 d-flex flex-wrap justify-content-between justify-content-lg-center align-content-between">';
-                        $saida .= '<div class="col-auto col-lg-12 d-flex justify-content-center"><img src="' . get_template_directory_uri() .'/assets/images/graphics/icon_calendario.svg" alt="Calendário"></div>';
+                        $saida .= '<div class="col-auto col-lg-12 d-flex justify-content-center"><img src="' . get_template_directory_uri() .'/assets/images/graphics/icon_calendario.svg" alt="Calendário" style="width:auto !important;"></div>';
                         $saida .= '<div class="col-auto col-lg-12 d-flex justify-content-center align-items-center flex-wrap">';
                         if ($evento['datab']==1) {
                             $saida .= '<h6>'.__('EM BREVE','pl-rede').'</h6>';

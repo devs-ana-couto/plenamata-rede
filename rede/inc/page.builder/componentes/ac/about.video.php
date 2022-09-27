@@ -31,7 +31,7 @@ function pb_ac_about_video($obj_id, $obj = null, $block, $echo = true){
                 </div>
             </div>
         </section>
-    
+
     ';
 
     $generate_element = str_replace(
@@ -46,3 +46,4 @@ function pb_ac_about_video($obj_id, $obj = null, $block, $echo = true){
     return $generate_element;
 
 }
+?>

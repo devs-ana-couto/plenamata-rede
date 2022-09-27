@@ -1522,9 +1522,33 @@ body .site-header {
   color: #FFFFFF;
 }
 
+.owl-anterior {
+  position: absolute;
+  left: -42px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  cursor: pointer;
+}
+.owl-anterior img {
+  width: 20px;
+}
+
+.owl-posterior {
+  position: absolute;
+  right: -42px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  cursor: pointer;
+}
+.owl-posterior img {
+  width: 20px;
+}
+
 #content-sliders .item-slider .card {
   border: none;
-  transition: all 1s;
+  transition: all 1s ease;
 }
 #content-sliders .item-slider .card .letf-date {
   background: #EB6619;
@@ -1604,14 +1628,14 @@ body .site-header {
     visibility: hidden;
     opacity: 0;
     overflow: hidden;
-    transition: visibility, opacity 0.5s;
+    transition: 0.5s ease;
   }
 }
 #content-sliders .item-slider .card .box-image a:hover {
   border: 1px solid #FFFFFF;
   background: #FFF;
   color: #000;
-  transition: background-color 0.5s;
+  transition: 0.5s ease;
 }
 #content-sliders .item-slider .card .box-image .mask-content-slider {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.9) 100%);
@@ -1623,7 +1647,6 @@ body .site-header {
     opacity: 1;
     overflow: hidden;
     margin-bottom: 20px;
-    transition: height, visibility, opacity 1s;
   }
   #content-sliders .item-slider .card:hover .box-image a {
     height: auto;
@@ -1631,7 +1654,6 @@ body .site-header {
     opacity: 1;
     overflow: hidden;
     margin-bottom: 40px;
-    transition: height, opacity 1s;
   }
 }
 
